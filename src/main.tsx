@@ -9,7 +9,7 @@ const theme = createTheme({
   fontFamily: "Kanit,sans-serif",
   colors: {
     chanadda: virtualColor({
-      name: "chanadda",
+      name: "bariya",
       dark: "yellow",
       light: "violet",
     }),
@@ -18,8 +18,10 @@ const theme = createTheme({
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
+
     <MantineProvider theme={theme}>
       <RouterProvider router={router} />
     </MantineProvider>
+    
   </React.StrictMode>
 );

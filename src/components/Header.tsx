@@ -1,3 +1,4 @@
+
 import {
   Burger,
   Text,
@@ -33,15 +34,18 @@ export default function HeaderComponent({
             aria-label="Toggle navigation"
           />
         )}
+
         <Text
           size="xl"
           fw={900}
           variant="gradient"
           gradient={{ from: "red", to: "blue", deg: 90 }}
         >
-          TRACKER-APP
+          TRACKER-APP 
         </Text>
+
       </Group>
+      
       <Group gap={5}>
         <ActionIcon
           variant="filled"

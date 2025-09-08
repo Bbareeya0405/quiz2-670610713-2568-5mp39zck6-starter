@@ -20,8 +20,13 @@ type AddExpenseModalProps = {
 
 export default function AddExpenseModal({}: AddExpenseModalProps) {
   const [name, setName] = useState<string>("");
+  const [fnameError, setFnameError] = useState<string>(false);
+
   const [amount, setAmount] = useState<string | number>(0);
+  const [famount, setFamountError] = useState<string | number>(false);
+
   const [category, setCategory] = useState<string | null>(null);
+  const [fcategory, setFCategory] = useState<string | null>(false);
 
   const handleSubmit = () => {};
 
