@@ -17,7 +17,6 @@ export default function ExpenseTracker() {
   const handleAdd = () => {
     const newTask: Task = {
       id: uuidv4(),
-      title: randomId(),
       description: lorem.generateWords(10),
       isDone: false,
       dueDate: new Date(),
@@ -37,7 +36,13 @@ export default function ExpenseTracker() {
       <Divider my="md" />
       {/* Type additional total cost here. */}
       <Title order={4}>Total cost: {} Baht</Title>
-      <Stack my="sm">{/* Type additional text here. */}</Stack>
+      <Stack my="sm">{
+        <Text>
+          Food: {} Bath
+          Transport: {} Bath
+          Entertainment: {} Bath
+        </Text>
+      }</Stack>
         
 
       <Divider my="md" />
